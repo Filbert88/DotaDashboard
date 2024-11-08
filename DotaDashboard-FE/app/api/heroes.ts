@@ -1,16 +1,18 @@
 import { Hero, ApiResponse } from "@/lib/types";
 
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_BASE_URL;
+
 export async function MetaHeroesByTier(): Promise<
   ApiResponse<Record<string, Hero[]>>
 > {
-  const response = await fetch("http://localhost:5056/api/heroes/top-by-tier");
+  const response = await fetch(`${API_BASE_URL}/heroes/top-by-tier`);
   const data = await response.json();
   return data as ApiResponse<Record<string, Hero[]>>;
 }
 
 export async function MetaHeroesByProStats(): Promise<ApiResponse<Hero[]>> {
   const response = await fetch(
-    "http://localhost:5056/api/heroes/meta-by-pro-stats"
+    `${API_BASE_URL}/heroes/meta-by-pro-stats`
   );
   const data = await response.json();
   return data as ApiResponse<Hero[]>;
@@ -23,7 +25,7 @@ export async function RecommendationMetaHeroes(
 > {
   try {
     const response = await fetch(
-      `http://localhost:5056/api/heroes/recommend/${userId}`
+      `${API_BASE_URL}/heroes/recommend/${userId}`
     );
 
     if (!response.ok) {

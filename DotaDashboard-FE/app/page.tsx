@@ -20,7 +20,7 @@ import {
   MetaHeroesByProStats,
   RecommendationMetaHeroes,
 } from "./api/heroes";
-import { Hero, Role, Tab, TierData, ApiResponse } from "@/lib/types";
+import { Hero, Role, Tab, ApiResponse } from "@/lib/types";
 
 const tiers: string[] = [
   "Herald",
@@ -379,7 +379,7 @@ export default function DotaDashboard() {
                     </p>
                   ) : (
                     <p className="text-center text-gray-500 w-full mt-10">
-                      Enter a player ID and click "Get Suggestions" to see
+                      Enter a player ID and click &quot;Get Suggestions&quot; to see
                       recommendations.
                     </p>
                   )}

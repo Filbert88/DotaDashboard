@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DotaDashboardAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+988b66bc92a3758892e38772dc76c34d31bdf9f5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3855da56243bfcf74df0c0b5f2d80dfd2e78079c")]
 [assembly: System.Reflection.AssemblyProductAttribute("DotaDashboardAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DotaDashboardAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
