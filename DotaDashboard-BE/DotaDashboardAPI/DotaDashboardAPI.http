@@ -1,0 +1,6 @@
+@DotaDashboardAPI_HostAddress = http://localhost:5056
+
+GET {{DotaDashboardAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
