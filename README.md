@@ -65,6 +65,11 @@ docker-compose up --build
      ```bash
      cd DotaDashboard-FE
      ```
+    -To run it locally, you will need to add the following environment variables to your .env file:
+      .env for this project: 
+      ```shell
+      NEXT_PUBLIC_API_BASE_URL=http://localhost:5056/api
+      ```
    - Install dependencies:
      ```bash
      npm install
